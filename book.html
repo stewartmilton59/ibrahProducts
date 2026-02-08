@@ -29,6 +29,14 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <!-- Nice Select CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- jQuery (required) -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- Nice Select JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha512-NglMQKrrE4v0WiFSXm0bRf1dt+MuPBwvlfvWBM+vvRA7JcFXVmNLlCP6rXFrkWHL2x5h+0rOuIoS0p1jlrTa/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 
@@ -146,48 +154,57 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Book A Table
+          Weka Oda Yako
         </h2>
       </div>
       <div class="row">
         <div class="col-md-6">
-          <div class="form_container">
+          <div class="_container">
             <form action="">
               <div>
-                <input type="text" class="form-control" placeholder="Your Name" />
+                <input type="text" class="form-control" placeholder="Jina lako" required />
               </div>
+              <br>
               <div>
-                <input type="text" class="form-control" placeholder="Phone Number" />
+                <input type="text" class="form-control" placeholder="Namaba za simu" required />
               </div>
+              <br>
               <div>
-                <input type="email" class="form-control" placeholder="Your Email" />
+                <input type="email" class="form-control" placeholder="Email yako" required />
               </div>
+              <br>
               <div>
                 <select class="form-control nice-select wide">
-                  <option value="" disabled selected>
-                    How many persons?
-                  </option>
-                  <option value="">
-                    2
-                  </option>
-                  <option value="">
-                    3
-                  </option>
-                  <option value="">
-                    4
-                  </option>
-                  <option value="">
-                    5
-                  </option>
-                </select>
-              </div>
+  <option value="" disabled selected>
+    Unahitaji?
+  </option>
+  <option value="pasta">
+    Delicious Pasta
+  </option>
+  <option value="">
+    Delicious Garlic Paste
+  </option>
+  <option value="">
+    Pilipili Ibrah
+  </option>
+  <option value="">
+    Aroma Mix Paste
+  </option>
+  <option value="">
+    Mixed Spice Paste
+  </option>
+  <option value="">
+    Ginger Garlic Paste
+  </option>
+</select>
+     </div> 
+  <br>
               <div>
                 <input type="date" class="form-control">
               </div>
+              <br>
               <div class="btn_box">
-                <button>
-                  Book Now
-                </button>
+                <button type="button" class="btn btn-warning">Order Now</button>
               </div>
             </form>
           </div>
@@ -201,7 +218,6 @@
     </div>
   </section>
   <!-- end book section -->
-
   <!-- footer section -->
   <footer class="footer_section">
     <div class="container">
