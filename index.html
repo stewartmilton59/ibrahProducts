@@ -1345,8 +1345,30 @@ Sisi ni brand ya viungo asilia (spice pastes) iliyojikita katika kuleta urahisi,
   <!-- custom js -->
   <script src="js/custom.js"></script>
   <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
+  <script src="AQ.Ab8RN6LfZKTl4Mjd-sm-vjnmFKte2s22GP3X9De1r8h3YKerEw"></script>
+  <script>
+function initMap() {
+  // Set the coordinates of the location (latitude, longitude)
+  var location = { lat: -6.7924, lng: 39.2083 }; // Example: Dar es Salaam, Tanzania
+
+  // Create the map
+  var map = new google.maps.Map(document.getElementById('googleMap'), {
+    zoom: 15, // Zoom level
+    center: location
+  });
+
+  // Add a marker at the location
+  var marker = new google.maps.Marker({
+    position: location,
+    map: map,
+    title: "Our Location"
+  });
+}
+
+// Initialize map after page loads
+window.onload = initMap;
+</script>
+
   <!-- End Google Map -->
 
 </body>
